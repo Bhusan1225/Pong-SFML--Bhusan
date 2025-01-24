@@ -3,6 +3,14 @@
 //using namespace sf;
 namespace Core
 {
+    void GameWindowManager::initialize() 
+    {
+        // Allocate memory for the render window object
+        game_window = new RenderWindow();
+        // Set up the window with configured properties
+        createGameWindow();
+    }
+
     void GameWindowManager::createGameWindow() 
     {
         // Create the window with specified dimensions and title
