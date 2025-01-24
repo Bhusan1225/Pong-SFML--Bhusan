@@ -32,7 +32,14 @@ namespace Core
         game_window->display();
     }
 
-    RenderWindow* GameWindowManager::getGameWindow() 
+    void GameWindowManager::initialize() {
+        // Allocate memory for the render window object
+        game_window = new RenderWindow();
+        // Set up the window with configured properties
+        createGameWindow();
+    }
+
+    RenderWindow* GameWindowManager::getGameWindow()
     {
 
         return game_window;
