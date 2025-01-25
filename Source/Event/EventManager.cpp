@@ -29,4 +29,10 @@ namespace Event
         // Detect if a specific key is pressed
         return sf::Keyboard::isKeyPressed(key); // this is existing function in keyboard
     }
+
+    bool EventManager::isLeftMouseButtonClicked()
+    {
+        // Detect if the left mouse button is clicked
+        return (sf::Mouse::isButtonPressed(sf::Mouse::Left));
+    }
 }
