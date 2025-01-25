@@ -20,6 +20,7 @@ int main() {
 
     while (gameWindowManager.isGameRunning()) 
     {
+        eventManager.pollEvents(gameWindowManager.getGameWindow());
         gameWindowManager.render();
     }
 
