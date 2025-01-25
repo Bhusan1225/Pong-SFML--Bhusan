@@ -1,4 +1,5 @@
-
+#include <iostream>
+using namespace std;
 
 #include "../../Header/Event/EventManager.h"
 
@@ -20,7 +21,16 @@ namespace Event
             {
                 game_window->close();
             }
+
+            if (isLeftMouseButtonClicked())
+            {
+                sf::Vector2i position = sf::Mouse::getPosition(*game_window);
+
+                // Log the mouse position
+                std::cout << "Left mouse click at: " << position.x << ", " << position.y << std::endl;
+            }
         }
+        
 
     }
 
@@ -36,3 +46,4 @@ namespace Event
         return (sf::Mouse::isButtonPressed(sf::Mouse::Left));
     }
 }
+
