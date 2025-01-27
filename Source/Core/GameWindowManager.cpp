@@ -30,7 +30,7 @@ namespace Core
 
     void GameWindowManager::clearGameWindow()
     {
-        game_window->clear();
+        return game_window->clear();
     }
 
     void GameWindowManager::displayGameWindow()
@@ -40,7 +40,7 @@ namespace Core
 
     RenderWindow* GameWindowManager::getGameWindow() 
     {
-
+        //this will return the originally rendered game window.
         return game_window;
     }
 }

@@ -84,4 +84,25 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\Textures\Ball.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\Textures\HorizontalLine.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\Textures\Paddle.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Assets\Sounds\Ball_Bounce.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Assets\Sounds\Pong_BGM.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Assets\Fonts\Aloevera-OVoWO.ttf" />
+    <Font Include="Assets\Fonts\AmberyGardenRegular-PKjGd.ttf" />
+  </ItemGroup>
 </Project>

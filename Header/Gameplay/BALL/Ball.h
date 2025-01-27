@@ -1,7 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 using namespace sf;
-
+using namespace std;
 
 
 namespace Gameplay
@@ -11,14 +11,27 @@ namespace Gameplay
 		class Ball
 		{
 		private:
-			CircleShape ball_sprite;
-			const float radius = 10.0f;
+			Texture pong_ball_texture;
+			Sprite pong_ball_sprite;
+
+			string texture_path = "Assets/Textures/Ball.png";
+			
+			const float scale_x = 0.06f; 
+			const float scale_y = 0.06f; 
+
+	
 			const float position_x = 615.0f;
 			const float position_y = 335.0f;
+
+			void loadTexture();
+			void initializeVariables();
+
 		public:
 			Ball();
 			void update();
 			void render(RenderWindow* game_window);
+
+			
 		};
 
 	
