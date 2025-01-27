@@ -1,8 +1,11 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 using namespace sf;
+
 #include "../../Header/Gameplay/BALL/Ball.h"
 #include "../../Header/Gameplay/PADDLE/Paddle.h"
+
+
 
 namespace Gameplay
 {
@@ -19,6 +22,16 @@ namespace Gameplay
 		Ball* ball;
 		Paddle* player1;
 		Paddle* player2;
+	
+	
+	private:
+		void initialize();
+
+	public:
+		GamePlayManager();
+		void update();
+		void render(RenderWindow* game_window);
+
 	};
 
 

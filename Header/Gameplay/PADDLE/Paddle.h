@@ -7,8 +7,8 @@ using namespace sf;
 namespace Gameplay
 
 {
-    namespace PADDLE 
-{
+  
+
         class Paddle
 
         {
@@ -24,7 +24,7 @@ namespace Gameplay
             void render(RenderWindow* game_window);
 
         };
-    }
+    
    
 
 }

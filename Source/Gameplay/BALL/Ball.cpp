@@ -1,4 +1,4 @@
-#include "../../../Header/Gameplay/BALL/Ball.h"
+#include "../../Header/Gameplay/BALL/Ball.h"
 
 using namespace sf;
 
@@ -6,8 +6,8 @@ using namespace sf;
 
 namespace Gameplay
 {
-    namespace BALL 
-    {
+   
+   
 
         Ball::Ball()
         {
@@ -20,7 +20,7 @@ namespace Gameplay
             game_window->draw(ball_sprite);
         }
 
-    }
+   
    
         
 

@@ -7,8 +7,7 @@ using namespace sf;
 namespace Gameplay
 
 {
-	namespace BALL 
-	{
+	
 		class Ball
 		{
 		private:
@@ -22,7 +21,7 @@ namespace Gameplay
 			void render(RenderWindow* game_window);
 		};
 
-	}
+	
 
 }
 
