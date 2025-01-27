@@ -54,6 +54,12 @@
     <ClCompile Include="Source\Core\GameLoop.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Gameplay\BALL\Ball.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Gameplay\PADDLE\Paddle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header\Event\EventManager.h">
@@ -63,6 +69,12 @@
       <Filter>Header Files\Header\Core</Filter>
     </ClInclude>
     <ClInclude Include="Header\Core\GameLoop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Gameplay\BALL\Ball.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Gameplay\PADDLE\Paddle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
