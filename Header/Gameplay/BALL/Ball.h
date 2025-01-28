@@ -13,7 +13,6 @@ namespace Gameplay
 		private:
 			Texture pong_ball_texture;
 			Sprite pong_ball_sprite;
-
 			string texture_path = "Assets/Textures/Ball.png";
 			
 			const float scale_x = 0.06f; 

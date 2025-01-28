@@ -8,7 +8,9 @@ namespace Gameplay
 	GamePlayManager::GamePlayManager(EventManager* Event_manager)
 	 {
 		event_manager = Event_manager;
+		bondary = new Boundary();
 	}
+
 
 	void GamePlayManager::initialize() 
 	
@@ -20,13 +22,15 @@ namespace Gameplay
 
 	void GamePlayManager::render(RenderWindow* game_window)
 	{
+		//boundary->render(game_window);
 		ball->render(game_window);
 		player1->render(game_window);
 		player2->render(game_window);
 	}
 	void GamePlayManager::update()
 	{
-		
+		ball->update();
+
 		player1->update(event_manager->isKeyPressed(Keyboard::W),event_manager->isKeyPressed(Keyboard::S));
 		
 		player2->update(event_manager->isKeyPressed(Keyboard::Up),event_manager->isKeyPressed(Keyboard::Down));

@@ -13,7 +13,7 @@ namespace Core
 
         game_window_manager->initialize();
 
-        
+        gameplay_manager->initialize();
     }
 
     bool GameLoop::isGameRunning() 
@@ -28,7 +28,7 @@ namespace Core
 
     void GameLoop::update() 
     {
-
+        gameplay_manager->update();
     }
 
     void GameLoop::render() {
