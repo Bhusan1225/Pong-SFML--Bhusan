@@ -1,12 +1,13 @@
 #pragma once
-#include <SFML/Graphics.hpp>
-using namespace sf;
+//#include <SFML/Graphics.hpp>
+
 
 #include "../../Header/Gameplay/BALL/Ball.h"
 #include "../../Header/Gameplay/PADDLE/Paddle.h"
+#include "../../Header/Event/EventManager.h"
 
 
-
+using namespace Event;
 namespace Gameplay
 {
 
@@ -22,13 +23,13 @@ namespace Gameplay
 		Ball* ball;
 		Paddle* player1;
 		Paddle* player2;
-	
+		EventManager* event_manager;
 	
 	private:
 		void initialize();
 
 	public:
-		GamePlayManager();
+		GamePlayManager(EventManager* event);
 		void update();
 		void render(RenderWindow* game_window);
 

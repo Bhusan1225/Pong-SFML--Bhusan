@@ -16,6 +16,7 @@ int main() {
     // Step 3: Run the game loop
     while (game_loop_manager->isGameRunning())
     {
+        //each frame
         game_loop_manager->pollEvent();
         game_loop_manager->update();
         game_loop_manager->render();

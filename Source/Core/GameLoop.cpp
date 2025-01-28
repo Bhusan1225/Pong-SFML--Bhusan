@@ -9,7 +9,7 @@ namespace Core
     {
         game_window_manager = new GameWindowManager();
         event_manager = new EventManager();
-        gameplay_manager = new GamePlayManager();
+        gameplay_manager = new GamePlayManager(event_manager);
 
         game_window_manager->initialize();
 

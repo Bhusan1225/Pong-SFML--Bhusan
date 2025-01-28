@@ -1,13 +1,13 @@
 #include "../../Header/Gameplay/GamePlayManager.h"
 
-using namespace sf;
+
 
 
 namespace Gameplay 
 {
-	GamePlayManager::GamePlayManager() 
+	GamePlayManager::GamePlayManager(EventManager* Event_manager)
 	 {
-		initialize();
+		event_manager = Event_manager;
 	}
 
 	void GamePlayManager::initialize() 
@@ -23,6 +23,13 @@ namespace Gameplay
 		ball->render(game_window);
 		player1->render(game_window);
 		player2->render(game_window);
+	}
+	void GamePlayManager::update()
+	{
+		
+		player1->update(event_manager->isKeyPressed(Keyboard::W),event_manager->isKeyPressed(Keyboard::S));
+		
+		player2->update(event_manager->isKeyPressed(Keyboard::Up),event_manager->isKeyPressed(Keyboard::Down));
 	}
 
 
