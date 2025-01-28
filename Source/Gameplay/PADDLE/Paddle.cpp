@@ -12,6 +12,10 @@ namespace Gameplay
             paddle_sprite.setPosition(position_x, position_y);
         }
         
+        RectangleShape Paddle::getPaddleSprite()
+        {
+            return paddle_sprite;
+        }
          
         void Paddle::update(bool move_up_key_pressed, bool move_down_key_pressed)
         {

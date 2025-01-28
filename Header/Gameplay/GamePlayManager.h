@@ -29,9 +29,6 @@ namespace Gameplay
 		Paddle* player2;
 		EventManager* event_manager;
 		Boundary* boundary;
-	
-
-	
 
 	public:
 		void initialize();
