@@ -34,7 +34,7 @@ namespace Gameplay
             pong_ball_sprite.setPosition(position_x, position_y); // Set position
         }
         
-        void Ball::update()
+        void Ball::update(Paddle* player1, Paddle* player2)
         {
             move();
             onCollision(player1, player2);

@@ -4,18 +4,24 @@ namespace Gameplay
 {
 	Boundary::Boundary()
 	{
-		createTopBoundary();
 		createLeftBoundary();
+		createTopBoundary();
+		createRightBoundary();
+		createBottomBoundary();
 		createCenterLine();
+
 	}
 
 	void Boundary::render(RenderWindow* game_window)
 	{
+		
 		game_window->draw(topBoundary);
-		game_window->draw(leftBoundary);
+		game_window->draw(bottomBoundary);
+		game_window->draw(rightBoundary);
 		game_window->draw(centerLine);
+		game_window->draw(leftBoundary);
 	}
-
+	//////////////////////////////////////////////////////////////////////////////////////////////////
 	void Boundary::createTopBoundary()
 	{
 		topBoundary.setSize(Vector2f(horizontal_boundary_width, horizontal_boundary_height));
@@ -29,6 +35,23 @@ namespace Gameplay
 		leftBoundary.setPosition(left_position_x, left_position_y);
 		leftBoundary.setFillColor(boundary_color);
 	}
+	
+	void Boundary::createRightBoundary()
+	{
+		rightBoundary.setSize(Vector2f(vertical_boundary_width, vertical_boundary_height));
+		rightBoundary.setPosition(right_position_x, right_position_y);
+		rightBoundary.setFillColor(boundary_color);
+	}
+
+	void Boundary::createBottomBoundary()
+	{
+		bottomBoundary.setSize(Vector2f(horizontal_boundary_width, horizontal_boundary_height));
+		bottomBoundary.setPosition(bottom_position_x, bottom_position_y);
+		bottomBoundary.setFillColor(boundary_color);
+	}
+
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////
 
 	void Boundary::createCenterLine()
 	{

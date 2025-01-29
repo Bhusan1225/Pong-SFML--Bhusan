@@ -44,7 +44,7 @@ namespace Gameplay
 
 		public:
 			Ball();
-			void update();
+			void update(Paddle* player1, Paddle* player2);
 			void render(RenderWindow* game_window);
 
 		private:

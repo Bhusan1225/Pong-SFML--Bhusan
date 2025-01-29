@@ -14,6 +14,8 @@ namespace Gameplay
         RectangleShape topBoundary;
         //vertical
         RectangleShape leftBoundary;
+        RectangleShape rightBoundary;
+        RectangleShape bottomBoundary;
         RectangleShape centerLine;
 
         // Horizontal boundary dimensions (top and bottom)
@@ -24,15 +26,20 @@ namespace Gameplay
         const float vertical_boundary_width = 20.0f;
         const float vertical_boundary_height = 720.0f;
 
-
         ////////////////////////////////////////////////////////////////////////////////////////
         // Top boundary starts at the window's top-left corner
         const float top_position_x = 0.0f;
         const float top_position_y = 0.0f;
 
+        const float bottom_position_x = 0.0f;
+        const float bottom_position_y = 700.0f;
+
         // Left boundary also starts at top-left
         const float left_position_x = 0.0f;
         const float left_position_y = 0.0f;
+
+        const float right_position_x = 1260.0f;
+        const float right_position_y = 0.0f;
         ////////////////////////////////////////////////////////////////////////////////////////
         
 

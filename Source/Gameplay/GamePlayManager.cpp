@@ -1,8 +1,6 @@
 #include "../../Header/Gameplay/GamePlayManager.h"
 
 
-
-
 namespace Gameplay 
 {
 	GamePlayManager::GamePlayManager(EventManager* Event_manager)
@@ -29,12 +27,15 @@ namespace Gameplay
 	}
 	void GamePlayManager::update()
 	{
-		ball->update();
-
+		
+		ball->update(player1, player2);
 		player1->update(event_manager->isKeyPressed(Keyboard::W),event_manager->isKeyPressed(Keyboard::S));
 		
 		player2->update(event_manager->isKeyPressed(Keyboard::Up),event_manager->isKeyPressed(Keyboard::Down));
+
+		
 	}
 
 
 }
+
