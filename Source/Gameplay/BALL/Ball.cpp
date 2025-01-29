@@ -49,9 +49,26 @@ namespace Gameplay
 
         void Ball::move(TimeService* time_service)
         {
+            updateDelayTime(time_service->getDeltaTime());
             pong_ball_sprite.move(velocity * time_service->getDeltaTime() * speed_multiplier);
         }
         
+        void Ball::updateDelayTime(float deltaTime)
+        {
+            if (current_state == BallState::Idle)
+            {
+                elapsed_delay_time += deltaTime;
+                if (elapsed_delay_time >= delay_duration)
+                {
+                    current_state = BallState::Moving;
+                }
+                else
+                {
+                    return;
+                }
+            }
+        }
+
         void Ball::handlePaddleCollision(Paddle* player1, Paddle* player2)
         {
             // 1. Get our sprites

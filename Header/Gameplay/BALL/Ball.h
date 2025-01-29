@@ -11,6 +11,11 @@ using namespace Utility;
 namespace Gameplay
 
 {
+	enum class BallState
+	{
+		Idle,
+		Moving
+	};
 	
 		class Ball
 		{
@@ -35,7 +40,7 @@ namespace Gameplay
 			//ball
 			float ball_speed = 0.5f;
 			Vector2f velocity = Vector2f(ball_speed, ball_speed);
-			int speed_multiplier = 10;
+			float speed_multiplier = 10;
 
 
 			//boundry
@@ -47,6 +52,14 @@ namespace Gameplay
 			//Center Position
 			const float center_position_x = 615.0f;
 			const float center_position_y = 325.0f;
+
+			//delaying the ball when game starts
+			float delay_duration = 2.0f;
+			BallState current_state = BallState::Idle; // Initialize the ball's state
+			float elapsed_delay_time = 0.0f;
+
+			void move(TimeService* timeService);
+			void updateDelayTime(float deltaTime);
 
 		public:
 			Ball();
@@ -60,6 +73,8 @@ namespace Gameplay
 			void handleOutofBoundCollision();
 			void reset();
 			void onCollision(Paddle* player1, Paddle* player2);
+			
+
 		};
 
 	
