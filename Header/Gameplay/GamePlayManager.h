@@ -7,11 +7,12 @@
 
 #include "../../Header/Gameplay/Boundary/Boundary.h"
 #include "../../Header/Event/EventManager.h"
+//#include "../../Header/Utility/TimeService.h"
 
 
 using namespace Event;
-//using namespace PADDLE;
-//using namespace Boundary;
+//using namespace Utility;
+
 
 namespace Gameplay
 {
@@ -30,6 +31,7 @@ namespace Gameplay
 		Paddle* player2;
 		EventManager* event_manager;
 		Boundary* boundary;
+		TimeService* time_service;
 
 	public:
 		void initialize();
