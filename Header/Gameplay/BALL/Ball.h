@@ -29,7 +29,7 @@ namespace Gameplay
 			void initializeVariables();
 
 			//ball
-			float ball_speed = .5f;
+			float ball_speed = 0.5f;
 			Vector2f velocity = Vector2f(ball_speed, ball_speed);
 
 			//boundry
