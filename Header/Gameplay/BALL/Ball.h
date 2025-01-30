@@ -40,7 +40,7 @@ namespace Gameplay
 			//ball
 			float ball_speed = 0.5f;
 			Vector2f velocity = Vector2f(ball_speed, ball_speed);
-			float speed_multiplier = 10;
+			float speed_multiplier = 900;
 
 
 			//boundry

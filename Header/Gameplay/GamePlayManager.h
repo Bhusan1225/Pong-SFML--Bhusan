@@ -34,7 +34,7 @@ namespace Gameplay
 		Boundary* boundary;
 		TimeService* time_service;
 		
-		UIService* ui_service = new UIService;
+		UIService* ui_service;
 	public:
 		void initialize();
 		GamePlayManager(EventManager* event);

@@ -22,7 +22,7 @@ namespace Gameplay
             float topBoundary = 20.0f;
             float bottomBoundary = 700.0f;
 
-            int speedMultiplier = 10;
+            int speedMultiplier = 1000;
 
             TimeService* time_service;
 
