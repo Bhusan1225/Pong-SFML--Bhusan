@@ -22,8 +22,7 @@ namespace Sound
         static const std::string bgmPath;
         static const std::string ballBouncePath;
 
-       
-  
+      
 
     public:
         SoundManager();

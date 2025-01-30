@@ -1,7 +1,5 @@
 #include "../../Header/Core/GameLoop.h"
 
-
-
 namespace Core
 {
 
@@ -11,7 +9,7 @@ namespace Core
         event_manager = new EventManager();
         gameplay_manager = new GamePlayManager(event_manager);
         sound_manager = new SoundManager();
-
+        SoundManager::PlayBackgroundMusic();// Let the music begin!
         game_window_manager->initialize();
 
         gameplay_manager->initialize();
