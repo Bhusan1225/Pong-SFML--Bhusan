@@ -4,6 +4,7 @@ namespace UI
 {
     UIService::UIService()
     {
+        loadFontTexture();
         createRightScoreText();
         createLeftScoreText();
     }
@@ -34,5 +35,6 @@ namespace UI
     void UIService::render(RenderWindow* game_window)
     {
         game_window->draw(left_score_text);
+        game_window->draw(right_score_text);
     }
 }

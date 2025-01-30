@@ -25,6 +25,7 @@ namespace UI
         float right_score_position_x = 670.0f;
         float right_score_position_y = 30.0f;
 
+
         int player1_score = 0;
     public:
         UIService();
