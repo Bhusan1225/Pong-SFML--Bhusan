@@ -45,19 +45,25 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Gameplay\Boundary\Boundary.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\Gameplay\Ball\Ball.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\Gameplay\Paddle\Paddle.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\Gameplay\GameplayManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Source\Event\EventManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\GameWindowManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\GameLoop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Gameplay\BALL\Ball.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Gameplay\PADDLE\Paddle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Gameplay\GamePlayManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Gameplay\Boundary\Boundary.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Source\Utility\TimeService.cpp">
@@ -66,34 +72,61 @@
     <ClCompile Include="Source\UI\UIService.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Core\GameWindowManager.cpp">
+    <ClCompile Include="Source\Sound\SoundManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header\Gameplay\Ball\Ball.h">
-      <Filter>Header Files\Header\GamePlay\Ball</Filter>
-    </ClInclude>
-    <ClInclude Include="Header\Gameplay\Boundary\Boundary.h">
-      <Filter>Header Files\Header\GamePlay\Boundary</Filter>
-    </ClInclude>
     <ClInclude Include="Header\Event\EventManager.h">
       <Filter>Header Files\Header\Events</Filter>
-    </ClInclude>
-    <ClInclude Include="Header\Gameplay\GameplayManager.h">
-      <Filter>Header Files\Header\GamePlay</Filter>
     </ClInclude>
     <ClInclude Include="Header\Core\GameWindowManager.h">
       <Filter>Header Files\Header\Core</Filter>
     </ClInclude>
-    <ClInclude Include="Header\Gameplay\Paddle\Paddle.h">
-      <Filter>Header Files\Header\GamePlay\Paddle</Filter>
+    <ClInclude Include="Header\Core\GameLoop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Gameplay\BALL\Ball.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Gameplay\PADDLE\Paddle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Gameplay\GamePlayManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Gameplay\Boundary\Boundary.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Header\Utility\TimeService.h">
-      <Filter>Header Files\Header\Utility</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Header\UI\UIService.h">
-      <Filter>Header Files\Header\UI</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Header\Sound\SoundManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\Textures\Ball.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\Textures\HorizontalLine.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\Textures\Paddle.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Assets\Sounds\Ball_Bounce.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Assets\Sounds\Pong_BGM.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Assets\Fonts\Aloevera-OVoWO.ttf" />
+    <Font Include="Assets\Fonts\AmberyGardenRegular-PKjGd.ttf" />
   </ItemGroup>
 </Project>
