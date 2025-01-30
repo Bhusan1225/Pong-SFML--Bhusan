@@ -8,11 +8,12 @@
 #include "../../Header/Gameplay/Boundary/Boundary.h"
 #include "../../Header/Event/EventManager.h"
 //#include "../../Header/Utility/TimeService.h"
+#include "../../Header/UI/UIService.h"
 
 
 using namespace Event;
 //using namespace Utility;
-
+using namespace UI;
 
 namespace Gameplay
 {
@@ -32,7 +33,8 @@ namespace Gameplay
 		EventManager* event_manager;
 		Boundary* boundary;
 		TimeService* time_service;
-
+		
+		UIService* ui_service = new UIService;
 	public:
 		void initialize();
 		GamePlayManager(EventManager* event);

@@ -67,7 +67,7 @@ namespace Gameplay
 			void render(RenderWindow* game_window);
 
 		private:
-			void move(TimeService* time_service);
+			
 			void handlePaddleCollision(Paddle* player1, Paddle* player2);
 			void handleBoudaryCollision();
 			void handleOutofBoundCollision();

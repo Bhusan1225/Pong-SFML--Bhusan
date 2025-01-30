@@ -7,7 +7,6 @@ using namespace sf;
 namespace Gameplay
 {
    
-   
 
         Ball::Ball()
         {

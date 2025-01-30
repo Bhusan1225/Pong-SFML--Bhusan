@@ -142,6 +142,7 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Source\Core\GameWindowManager.cpp" />
     <ClCompile Include="Source\Utility\TimeService.cpp" />
+    <ClCompile Include="Source\UI\UIService.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header\Gameplay\Boundary\Boundary.h" />
@@ -152,6 +153,7 @@
     <ClInclude Include="Header\Core\GameWindowManager.h" />
     <ClInclude Include="Header\Gameplay\PADDLE\Paddle.h" />
     <ClInclude Include="Header\Utility\TimeService.h" />
+    <ClInclude Include="Header\UI\UIService.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\Textures\Ball.png" />
