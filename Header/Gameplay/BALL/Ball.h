@@ -3,10 +3,12 @@
 
 #include "../../Header/Gameplay/PADDLE/Paddle.h"
 #include "../../Header/Utility/TimeService.h"
+#include "../../Header/Sound/SoundManager.h"
 
 using namespace sf;
 using namespace std;
 using namespace Utility;
+using namespace Sound;
 
 namespace Gameplay
 
@@ -30,6 +32,7 @@ namespace Gameplay
 			Paddle* player1;
 			Paddle* player2;
 			TimeService* time_service;
+			SoundManager* sound_Manager;
 
 			const float position_x = 615.0f;
 			const float position_y = 335.0f;

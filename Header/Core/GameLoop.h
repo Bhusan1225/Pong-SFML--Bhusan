@@ -3,7 +3,7 @@
 #include "../../Header/Core/GameWindowManager.h"
 #include "../../Header/Event/EventManager.h"
 #include "../../Header/Gameplay/GamePlayManager.h"
-
+#include "../../Header/Sound/SoundManager.h"
 
 using namespace sf;
 using namespace Core;
@@ -19,7 +19,7 @@ namespace Core
 		GameWindowManager* game_window_manager;
 		EventManager* event_manager;
 		GamePlayManager* gameplay_manager;
-
+		SoundManager* sound_manager;
 	public:
 		void initialize();
 
