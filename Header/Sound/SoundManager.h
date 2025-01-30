@@ -1,6 +1,8 @@
 #pragma once
 #include <SFML/Audio.hpp>
-#include <string>
+
+using namespace std;
+using namespace sf;
 
 namespace Sound
 {
@@ -20,14 +22,18 @@ namespace Sound
         static const std::string bgmPath;
         static const std::string ballBouncePath;
 
-        void Initialize();
-        static void LoadSoundFromFile();
+       
+  
 
     public:
         SoundManager();
         ~SoundManager();
 
+        void Initialize();
         static void PlaySoundEffect(SoundType soundType);
         static void PlayBackgroundMusic();
+
+    private:
+        static void LoadSoundFromFile();
     };
 }
