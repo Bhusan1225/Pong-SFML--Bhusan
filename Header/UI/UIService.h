@@ -39,6 +39,7 @@ namespace UI
 
         void incrementPlayer1Score();
         void incrementPlayer2Score();
+        void update();
 
     };
 }

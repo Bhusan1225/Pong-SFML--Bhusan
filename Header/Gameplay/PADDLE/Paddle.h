@@ -32,7 +32,7 @@ namespace Gameplay
             void render(RenderWindow* game_window);
             
             RectangleShape getPaddleSprite();
-            //void reset(float position_x, float position_y);
+            void reset(float position_x, float position_y);
 
         private:
            // void createPaddle(float position_x, float position_y);

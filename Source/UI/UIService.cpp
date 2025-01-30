@@ -52,4 +52,10 @@ namespace UI
     {
         player2_score++;
     }
+
+    void UIService::update()
+    {
+        left_score_text.setString(formatScore(player1_score));
+        right_score_text.setString(formatScore(player2_score));
+    }
 }
