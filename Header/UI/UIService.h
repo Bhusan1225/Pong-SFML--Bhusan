@@ -27,12 +27,18 @@ namespace UI
 
 
         int player1_score = 0;
+        int player2_score = 0;
+
     public:
         UIService();
         void loadFontTexture();
         void createLeftScoreText();
         void createRightScoreText();
         void render(RenderWindow* game_window);
+        string formatScore(int score);
+
+        void incrementPlayer1Score();
+        void incrementPlayer2Score();
 
     };
 }
